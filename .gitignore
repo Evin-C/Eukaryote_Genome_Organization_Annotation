@@ -3,3 +3,4 @@ scripts/*
 # But keep this specific file
 !scripts/01_run_EDTA.sh
 !scripts/02_run_TEsorter.sh
+!scripts/03_full_length_LTRs_identity.R
