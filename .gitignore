@@ -1,0 +1,4 @@
+# Ignore everything inside scripts/
+scripts/*
+# But keep this specific file
+!scripts/01_run_EDTA.sh
