@@ -2,3 +2,4 @@
 scripts/*
 # But keep this specific file
 !scripts/01_run_EDTA.sh
+!scripts/02_run_TEsorter.sh
