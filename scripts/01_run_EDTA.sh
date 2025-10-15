@@ -20,6 +20,7 @@ CDS_FASTA="${WORKDIR}/CDS_File/TAIR10_cds_20110103_representative_gene_model_upd
 
 # Create Output directory if needed
 mkdir -p ${OUTDIR}
+cd ${OUTDIR}
 
 # Run EDTA
 apptainer exec --bind ${WORKDIR} ${CONTAINER} EDTA.pl \
