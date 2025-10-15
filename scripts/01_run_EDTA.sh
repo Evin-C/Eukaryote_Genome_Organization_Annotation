@@ -22,7 +22,8 @@ CDS_FASTA="${WORKDIR}/CDS_File/TAIR10_cds_20110103_representative_gene_model_upd
 mkdir -p ${OUTDIR}
 
 # Run EDTA
-apptainer exec --bind ${WORKDIR} ${CONTAINER} EDTA.pl --genome ${INPUT_HIFIASM_FASTA} \
+apptainer exec --bind ${WORKDIR} ${CONTAINER} EDTA.pl \
+--genome ${INPUT_HIFIASM_FASTA} \
 --species others \
 --step all \
 --sensitive 1 \
