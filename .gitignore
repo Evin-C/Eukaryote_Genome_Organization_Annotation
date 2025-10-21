@@ -2,5 +2,9 @@
 scripts/*
 # But keep this specific file
 !scripts/01_run_EDTA.sh
-!scripts/02_run_TEsorter.sh
+!scripts/02_TEsorter_ltr_full.sh
 !scripts/03_full_length_LTRs_identity.R
+!scripts/04_run_samtools.sh
+!scripts/05_ visualize_TE_annotations.R
+!scripts/06_run_seqkit_copia.sh
+!scripts/07_run_seqkit_gypsy.sh
