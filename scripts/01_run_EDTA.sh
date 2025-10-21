@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=EDTA               # Job name
 #SBATCH --output=EDTA_%j.out          # Standard output log
-#SBATCH --error=EDTA_%j.err           # Standard input log
+#SBATCH --error=EDTA_%j.err           # Standard error log
 #SBATCH --cpus-per-task=40             
 #SBATCH --mem=200G                    # 200G memory allocation
 #SBATCH --time=48:00:00

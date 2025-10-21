@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=TEsorter           # Job name
 #SBATCH --output=TEsorter_%j.out      # Standard output log
-#SBATCH --error=TEsorter_%j.err       # Standard input log
+#SBATCH --error=TEsorter_%j.err       # Standard error log
 #SBATCH --cpus-per-task=16             
 #SBATCH --mem=80G                     # 80G memory allocation
 #SBATCH --time=24:00:00
