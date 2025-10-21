@@ -19,15 +19,15 @@ OUTDIR="${WORKDIR}/EDTA_results/"
 CDS_FASTA="${WORKDIR}/CDS_File/TAIR10_cds_20110103_representative_gene_model_updated"
 
 # Create Output directory if needed
-mkdir -p ${OUTDIR}
-cd ${OUTDIR}
+mkdir -p "${OUTDIR}"
+cd "${OUTDIR}"
 
 # Run EDTA
-apptainer exec --bind ${WORKDIR} ${CONTAINER} EDTA.pl \
---genome ${INPUT_HIFIASM_FASTA} \
+apptainer exec --bind "${WORKDIR}" "${CONTAINER}" EDTA.pl \
+--genome "${INPUT_HIFIASM_FASTA}" \
 --species others \
 --step all \
 --sensitive 1 \
---cds ${CDS_FASTA} \
+--cds "${CDS_FASTA}" \
 --anno 1 \
---threads ${SLURM_CPUS_PER_TASK}
+--threads "${SLURM_CPUS_PER_TASK}"

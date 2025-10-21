@@ -16,11 +16,11 @@ INPUT_FILE="${WORKDIR}/EDTA_results/hifi_assembly.fa.mod.EDTA.raw/hifi_assembly.
 OUTDIR="${WORKDIR}/TEsorter_results/"
 
 # Create Output directory if needed
-mkdir -p ${OUTDIR}
-cd ${OUTDIR}
+mkdir -p "${OUTDIR}"
+cd "${OUTDIR}"
 
 # Run TEsorter
-apptainer exec --bind ${WORKDIR} ${CONTAINER} TEsorter \
-${INPUT_FILE} \
+apptainer exec --bind "${WORKDIR}" "${CONTAINER}" TEsorter \
+"${INPUT_FILE}" \
 -db rexdb-plant \
--p ${SLURM_CPUS_PER_TASK}
+-p "${SLURM_CPUS_PER_TASK}"
