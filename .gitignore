@@ -8,3 +8,9 @@ scripts/*
 !scripts/05_ visualize_TE_annotations.R
 !scripts/06_run_seqkit_copia.sh
 !scripts/07_run_seqkit_gypsy.sh
+!scripts/08_TEsorter_copia.sh
+!scripts/09_TEsorter_gypsy.sh
+!scripts/10_MAKER_control_files.sh
+!scripts/11_MAKER_gene_annot.sh
+!scripts/12_parseRM.sh
+!scripts/13_plot_div.R
