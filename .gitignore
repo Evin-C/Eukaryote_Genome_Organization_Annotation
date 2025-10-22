@@ -5,7 +5,7 @@ scripts/*
 !scripts/02_TEsorter_ltr_full.sh
 !scripts/03_full_length_LTRs_identity.R
 !scripts/04_run_samtools.sh
-!scripts/05_visualize_TE_annotations.R
+!scripts/05_annotation_circlize.R
 !scripts/06_run_seqkit_copia.sh
 !scripts/07_run_seqkit_gypsy.sh
 !scripts/08_TEsorter_copia.sh
