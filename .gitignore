@@ -12,5 +12,6 @@ scripts/*
 !scripts/09_TEsorter_gypsy.sh
 !scripts/10_MAKER_control_files.sh
 !scripts/11_MAKER_gene_annot.sh
+!scripts/parseRM.pl
 !scripts/12_parseRM.sh
 !scripts/13_plot_div.R
