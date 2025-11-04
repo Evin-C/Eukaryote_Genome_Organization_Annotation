@@ -1,3 +1,6 @@
+Eukaryote_Genome_Organization_Annotation/*
+!Eukaryote_Genome_Organization_Annotation/README.md
+!Eukaryote_Genome_Organization_Annotation/LICENSE
 # Ignore everything inside scripts/
 scripts/*
 # But keep this specific file
