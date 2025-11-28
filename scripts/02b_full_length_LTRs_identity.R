@@ -89,7 +89,7 @@ plot_by_clade <- function(df, sf, ymax) {
     # histogram with color coding per superfamily
     geom_histogram(binwidth = binwidth,
                    color = "black",
-                   fill = ifelse(sf == "Copia", "#1b9e77", "#d95f02")) +
+                   fill = ifelse(sf == "Copia", "dodgerblue3", "red3")) +
     # vertical stacking: one facet per Clade (ncol = 1) and fixed y scale so bars are comparable
     facet_wrap(~Clade, ncol = 1, scales = "fixed") +
     # x axis focused around xlims values
@@ -112,5 +112,5 @@ p_gypsy <- plot_by_clade(anno_cls, "Gypsy", global_ymax)
 # Combine with cowplot side-by-side 
 combined <- plot_grid(p_copia, p_gypsy, ncol = 2, rel_widths = c(1, 1))
 
-ggsave("plots/01_LTR_Copia_Gypsy_cladelevel.png", combined, width = 12, height = 10, dpi = 300)
-ggsave("plots/01_LTR_Copia_Gypsy_cladelevel.pdf", combined, width = 12, height = 10)
+ggsave("Plots/LTR_identity_Copia_Gypsy_cladelevel.png", combined, width = 12, height = 10, dpi = 300)
+ggsave("Plots/LTR_identity_Copia_Gypsy_cladelevel.pdf", combined, width = 12, height = 10)

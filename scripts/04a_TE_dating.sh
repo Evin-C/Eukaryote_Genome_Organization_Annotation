@@ -11,7 +11,7 @@
 # Define variables
 USER="ecapan"
 WORKDIR="/data/users/${USER}/genome_organization_annotation/Eukaryote_Genome_Organization_Annotation"
-PARSE_SCRIPT="${WORKDIR}/scripts/parseRM.pl"
+PARSE_SCRIPT="${WORKDIR}/scripts/04b_parseRM.pl"
 
 # RepeatMasker Output File
 RM_OUT="${WORKDIR}/EDTA_results/hifi_assembly.fa.mod.EDTA.anno/hifi_assembly.fa.mod.out"

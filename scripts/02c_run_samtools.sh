@@ -15,7 +15,7 @@ CONTAINER="/containers/apptainer/samtools-1.19.sif"
 INPUT_HIFIASM_FASTA="${WORKDIR}/assemblies/hifi_assembly.fa"
 OUTDIR="${WORKDIR}/samtools_results/"
 
-# Create the output directory if it doesn't already exist:
+# Create Output directory
 mkdir -p "${OUTDIR}"
 cd "${OUTDIR}"
 

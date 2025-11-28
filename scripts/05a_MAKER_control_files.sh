@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-#SBATCH --job-name=MAKER              # Job name
-#SBATCH --output=MAKER_%j.out         # Standard output log
-#SBATCH --error=MAKER_%j.err          # Standard error log
+#SBATCH --job-name=MAKERc             # Job name
+#SBATCH --output=MAKERc_%j.out        # Standard output log
+#SBATCH --error=MAKERc_%j.err         # Standard error log
 #SBATCH --cpus-per-task=4             
 #SBATCH --mem=12G                     # 12G memory allocation
 #SBATCH --time=01:00:00
@@ -14,7 +14,7 @@ WORKDIR="/data/users/${USER}/genome_organization_annotation/Eukaryote_Genome_Org
 CONTAINER="/data/courses/assembly-annotation-course/CDS_annotation/containers/MAKER_3.01.03.sif"
 OUTDIR="${WORKDIR}/MAKER_results/gene_annotation_directory"
 
-# Create Output directory if needed
+# Create Output directory
 mkdir -p "${OUTDIR}"
 cd "${OUTDIR}"
 

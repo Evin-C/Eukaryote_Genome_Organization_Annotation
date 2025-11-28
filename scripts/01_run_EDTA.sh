@@ -15,10 +15,10 @@ CONTAINER="/data/courses/assembly-annotation-course/CDS_annotation/containers/ED
 INPUT_HIFIASM_FASTA="${WORKDIR}/assemblies/hifi_assembly.fa"
 OUTDIR="${WORKDIR}/EDTA_results/"
 
-# EDTA variables
+# CDS FASTA file used by EDTA to mask or protect coding regions
 CDS_FASTA="${WORKDIR}/CDS_File/TAIR10_cds_20110103_representative_gene_model_updated"
 
-# Create Output directory if needed
+# Create Output directory
 mkdir -p "${OUTDIR}"
 cd "${OUTDIR}"
 

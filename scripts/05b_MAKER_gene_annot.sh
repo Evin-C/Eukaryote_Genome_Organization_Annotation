@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-#SBATCH --job-name=MAKER              # Job name
-#SBATCH --output=MAKER_%j.out         # Standard output log
-#SBATCH --error=MAKER_%j.err          # Standard error log  
+#SBATCH --job-name=MAKERg             # Job name
+#SBATCH --output=MAKERg_%j.out        # Standard output log
+#SBATCH --error=MAKERg_%j.err         # Standard error log  
 #SBATCH --mem=120G                    # 120G memory allocation
 #SBATCH --time=7-0
 #SBATCH --partition=pibu_el8

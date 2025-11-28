@@ -3,7 +3,6 @@ library(reshape2)
 library(tidyverse)
 library(data.table)
 
-
 # get data from parameter
 
 data <- "hifi_assembly.fa.mod.out.landscape.Div.Rname.tab"
@@ -34,11 +33,6 @@ rep_table.m$fam <- factor(rep_table.m$fam, levels = c(
 
 rep_table.m$distance <- as.numeric(rep_table.m$variable) / 100 # as it is percent divergence
 
-# Question:
-# rep_table.m$age <- ??? # Calculate using the substitution rate and the formula provided in the tutorial
-
-# options(scipen = 999)
-
 # remove helitrons as EDTA is not able to annotate them properly (https://github.com/oushujun/EDTA/wiki/Making-sense-of-EDTA-usage-and-outputs---Q&A)
 rep_table.m <- rep_table.m %>% filter(fam != "DNA/Helitron")
 
@@ -50,17 +44,9 @@ ggplot(rep_table.m, aes(fill = fam, x = distance, weight = value / 1000000)) +
   ylab("Sequence (Mbp)") +
   theme(axis.text.x = element_text(angle = 90, vjust = 1, size = 9, hjust = 1), plot.title = element_text(hjust = 0.5))
 
-ggsave(filename = "Plots/output.pdf", width = 10, height = 5, useDingbats = F)
+ggsave(filename = "Plots/repeat_divergence_landscape_Mbp.pdf", width = 10, height = 5, useDingbats = F)
 
-
-
-# Why is it important to have this plot in Mbp instead of counts? 
-# Hint: 
-# Consider a scenario where there is a lot of small fragments of TEs due to nested insertions and deletions.
-# How would that affect the plot if you used counts instead of Mbp?
-#
-
-#Age question:
+# Age
 # Brassicaceae synonymous substitution rate (per site per year)
 r <- 8.22e-9
 
@@ -83,4 +69,4 @@ ggplot(rep_table.m, aes(fill = fam, x = distance, weight = value / 1e6)) +
   ylab("Sequence (Mbp)") +
   theme(axis.text.x = element_text(angle = 90, vjust = 1, size = 9, hjust = 1),
         plot.title = element_text(hjust = 0.5))
-ggsave(filename = "Plots/output_with_age.pdf", width = 10, height = 5, useDingbats = F)
+ggsave(filename = "Plots/repeat_divergence_age_landscape_Mbp.pdf", width = 10, height = 6, useDingbats = F)

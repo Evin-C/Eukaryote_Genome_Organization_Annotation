@@ -15,7 +15,7 @@ CONTAINER="/data/courses/assembly-annotation-course/CDS_annotation/containers/TE
 INPUT_FILE="${WORKDIR}/EDTA_results/hifi_assembly.fa.mod.EDTA.raw/hifi_assembly.fa.mod.LTR.raw.fa"
 OUTDIR="${WORKDIR}/TEsorter_results/"
 
-# Create Output directory if needed
+# Create Output directory
 mkdir -p "${OUTDIR}"
 cd "${OUTDIR}"
 

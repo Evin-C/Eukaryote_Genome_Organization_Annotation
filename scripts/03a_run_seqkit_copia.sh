@@ -19,7 +19,7 @@ OUTDIR="${WORKDIR}/SeqKit_results/Copia_TElib"
 # EDTA TE library FASTA
 TELIB="${WORKDIR}/EDTA_results/hifi_assembly.fa.mod.EDTA.TElib.fa"
 
-# Create the output directory if it doesn't already exist:
+# Create Output directory
 mkdir -p "${OUTDIR}"
 cd "${OUTDIR}"
 
