@@ -1,20 +1,10 @@
-Eukaryote_Genome_Organization_Annotation/*
-!Eukaryote_Genome_Organization_Annotation/README.md
-!Eukaryote_Genome_Organization_Annotation/LICENSE
-# Ignore everything inside scripts/
-scripts/*
-# But keep this specific file
-!scripts/01_run_EDTA.sh
-!scripts/02_TEsorter_ltr_full.sh
-!scripts/03_full_length_LTRs_identity.R
-!scripts/04_run_samtools.sh
-!scripts/05_annotation_circlize.R
-!scripts/06_run_seqkit_copia.sh
-!scripts/07_run_seqkit_gypsy.sh
-!scripts/08_TEsorter_copia.sh
-!scripts/09_TEsorter_gypsy.sh
-!scripts/10_MAKER_control_files.sh
-!scripts/11_MAKER_gene_annot.sh
-!scripts/parseRM.pl
-!scripts/12_parseRM.sh
-!scripts/13_plot_div.R
+*
+
+!*.sh
+!*.R
+!*.r
+!*.pl
+!.gitignore
+!README.md
+!LICENSE
+!*/
