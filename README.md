@@ -36,13 +36,13 @@ All data are publicly available from the following publications:
 Eukaryote_Genome_Organization_Annotation/
 │
 ├── plots/
-│   ├── AED_cumulative_distribution.pdf          # Cumulative AED distribution of gene models
-│   ├── LTR_identity_Copia_Gypsy_cladelevel.pdf  # Clade-level LTR identity histograms
-│   ├── TAIR10_bp.rip.pdf                        # Riparian plot vs TAIR10 and other accessions
-│   ├── TE_density_all.pdf                       # Genome-wide TE and gene density (circlize)
-│   ├── busco_figure.pdf                         # BUSCO completeness summary
-│   ├── pangenome_frequency_plot.pdf             # Core/accessory/specific gene and OG counts
-│   └── repeat_divergence_age_landscape_Mbp.pdf  # TE divergence/age landscape in Mbp
+│   ├── Fig1_LTR_identity_Copia_Gypsy_cladelevel.pdf  # Clade-level LTR identity histograms
+│   ├── Fig2_TE_density_all.pdf                       # Genome-wide TE and gene density (circlize)
+│   ├── Fig3_repeat_divergence_age_landscape_Mbp.pdf  # TE divergence/age landscape in Mbp
+│   ├── Fig4_AED_cumulative_distribution.pdf          # Cumulative AED distribution of gene models
+│   ├── Fig5_busco_figure.pdf                         # BUSCO completeness summary
+│   ├── Fig6_TAIR10_bp.rip.pdf                        # Riparian plot vs TAIR10 and other accessions
+│   └── Fig7_pangenome_frequency_plot.pdf             # Core/accessory/specific gene and OG counts
 │
 ├── scripts/
 │   ├── 01_run_EDTA.sh                  # Genome-wide TE annotation with EDTA
@@ -121,7 +121,7 @@ R (4.4.2) with the following packages and versions:
 - data.table (v1.16.4)
 - cowplot (v1.1.3)
 - circlize (v0.4.16)
-- ComplexHeatmap (v2.22.0) ([Bioconductor](https://bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html))
+- ComplexHeatmap (v2.22.0) (see [Bioconductor](https://bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html))
 - dplyr (v1.1.4)
 - reshape2 (v1.4.4)
 - readr (v2.1.5)
